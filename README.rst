@@ -12,8 +12,8 @@ BEL is a domain specific language that enables the expression of biological rela
 in a machine-readable format. It is supported by the `PyBEL <https://github.com/pybel/pybel>`_
 software ecosystem.
 
-Download Hetionet as BEL
-------------------------
+Download Hetionet as BEL |zenodo|
+---------------------------------
 The network is available in three BEL formats:
 
 - **BEL Script** - see description `below <https://github.com/pybel/hetionet-bel#bel-script>`_
@@ -163,3 +163,6 @@ In general, BEL graphs can be exported to GraphDati JSON then uploaded to BioDat
 `API <https://nanopubstore.demo.biodati.com>`_. Note, this address will be different for
 your instance of BioDati. More directly, BEL graphs in PyBEL can be uploaded
 programatically with ``pybel.post_graphdati()``.
+
+.. |zenodo| image:: https://zenodo.org/badge/244496063.svg
+   :target: https://zenodo.org/badge/latestdoi/244496063
