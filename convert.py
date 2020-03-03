@@ -1,6 +1,10 @@
 # -*- coding: utf-8 -*-
 
-"""Export Hetionet in several BEL formats."""
+"""Export Hetionet in several BEL formats.
+
+Before running this script, make sure you're on Python 3.5+
+and run ``pip install "pybel==0.14.5"
+"""
 
 import os
 
