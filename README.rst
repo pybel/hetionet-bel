@@ -9,11 +9,11 @@ software ecosystem.
 
 Download Hetionet as BEL
 ------------------------
-The network is available in three BEL formats (see descriptions below):
+The network is available in three BEL formats:
 
-- **BEL Script**
-- **Nodelink JSON**
-- **GraphDati JSON**
+- **BEL Script** - see description `below <https://github.com/pybel/hetionet-bel#bel-script>`_
+- **Nodelink JSON** - see description `below <https://github.com/pybel/hetionet-bel#nodelink-json>`_
+- **GraphDati JSON** - see description `below <https://github.com/pybel/hetionet-bel#graphdati-json>`_
 
 Cloning
 ~~~~~~~
@@ -30,18 +30,18 @@ The table below presents the way each metaedge from Hetionet is mapped to BEL, w
   pharmacological action was used to split this edge into several more types.
 - The metaedges ``Compound - palliates - Disease`` (CpD) and ``Compound - treats - Disease`` (CtD)
   are collapsed into the same BEL edge ``a(X) decreases path(Y)``
-- The metaedges ``Disease - resembles - Disease `` (DrD) and ``Disease - presents - Symptom`` (DpS) look the same
+- The metaedges ``Disease - resembles - Disease`` (DrD) and ``Disease - presents - Symptom`` (DpS) look the same
   because diseases and symptoms are both represented by the ``path()`` BEL function, but they differ
   in namespaces. Future BEL updates might allow for finer granularity nomenclature of entity types
   beyond ``path()``.
 - The metaedges ``Gene - participates - Biological Process`` (GpBP) and ``Gene - participates - Pathway`` (GpPW)
   look the same because biological processes and pathways are both represented with the ``bp()`` BEL function.
-- Molecular Activities and Cellular Components can't easily be represented in BEL, so the
+- Gene Ontology molecular activities and cellular components can't easily be represented in BEL, so the
   ``Gene - participates - Cellular Component`` (GpCC) and ``Gene - participates - Molecular Function`` (GpMF)
   edges are removed
-- ``Compound - downregulates - Gene`` (CdG) and ``Compound - upregulates - Gene`` (CuG) are both considered as being
-  related to the amount of the protein. This assumption could be wrong (did some of these data come from
-  LINCS microarray expreriments, for example? In that case it should be abundance of the RNA)
+- The metaedges ``Compound - downregulates - Gene`` (CdG) and ``Compound - upregulates - Gene`` (CuG) are both
+  considered as being related to the amount of the protein. This assumption could be wrong (did some of these data
+  come from LINCS microarray expreriments, for example? In that case it should be abundance of the RNA)
 
 +--------------------------------------------------+------+-------------------------------------------------------------------------------------------------------------------------+
 | Hetionet Metaedge                                | Abbr | BEL Edge Example                                                                                                        |
@@ -70,7 +70,7 @@ The table below presents the way each metaedge from Hetionet is mapped to BEL, w
 +--------------------------------------------------+------+-------------------------------------------------------------------------------------------------------------------------+
 | Compound - causes - Side Effect                  | CcSE | a(drugbank:DB00273 ! Topiramate) increases path(umls:C1142412 ! "Vasodilation procedure")                               |
 +--------------------------------------------------+------+-------------------------------------------------------------------------------------------------------------------------+
-| Compound - downregulates - Gene 	               | CdG  | a(drugbank:DB00273 ! Topiramate) decreases p(X)                                                                         |
+| Compound - downregulates - Gene                  | CdG  | a(drugbank:DB00273 ! Topiramate) decreases p(X)                                                                         |
 +--------------------------------------------------+------+-------------------------------------------------------------------------------------------------------------------------+
 | Compound - palliates - Disease                   | CpD  | a(drugbank:DB00635 ! Prednisone) decreases path(doid:"DOID:6364" ! migraine)                                            |
 +--------------------------------------------------+------+-------------------------------------------------------------------------------------------------------------------------+
@@ -78,7 +78,7 @@ The table below presents the way each metaedge from Hetionet is mapped to BEL, w
 +--------------------------------------------------+------+-------------------------------------------------------------------------------------------------------------------------+
 | Compound - resembles - Compound                  | CrC  | a(drugbank:DB00936 ! "Salicylic acid") association a(drugbank:DB00627 ! Niacin)                                         |
 +--------------------------------------------------+------+-------------------------------------------------------------------------------------------------------------------------+
-| Compound - upregulates - Gene 	               | CuG  | a(drugbank:DB00936 ! "Salicylic acid") increases p(X)                                                                   |
+| Compound - upregulates - Gene                    | CuG  | a(drugbank:DB00936 ! "Salicylic acid") increases p(X)                                                                   |
 +--------------------------------------------------+------+-------------------------------------------------------------------------------------------------------------------------+
 | Disease - associates - Gene                      | DaG  | p(ncbigene:348654 ! GEN1) association path(doid:"DOID:0050425" ! "restless legs syndrome")                              |
 +--------------------------------------------------+------+-------------------------------------------------------------------------------------------------------------------------+
