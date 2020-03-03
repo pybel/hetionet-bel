@@ -57,7 +57,7 @@ The table below presents the way each metaedge from Hetionet is mapped to BEL, w
 +--------------------------------------------------+------+-------------------------------------------------------------------------------------------------------------------------+
 | Anatomy - upregulates - Gene                     | AuG  | r(ncbigene:55327 ! LIN7C) positiveCorrelation pop(uberon:"UBERON:0002107" ! liver)                                      |
 +--------------------------------------------------+------+-------------------------------------------------------------------------------------------------------------------------+
-| Compound - binds - Gene                          | CbG  | p(ncbigene:64816 ! CYP3A43) partOf complex(a(drugbank:DB01058 ! Praziquantel), p(ncbigene:64816 ! CYP3A43))                              |
+| Compound - binds - Gene                          | CbG  | p(ncbigene:64816 ! CYP3A43) partOf complex(a(drugbank:DB01058 ! Praziquantel), p(ncbigene:64816 ! CYP3A43))             |
 +--------------------------------------------------+------+-------------------------------------------------------------------------------------------------------------------------+
 | Compound - binds - Gene                          | CbG  | a(drugbank:DB01058 ! Praziquantel) partOf complex(a(drugbank:DB01058 ! Praziquantel), p(ncbigene:64816 ! CYP3A43))      |
 +--------------------------------------------------+------+-------------------------------------------------------------------------------------------------------------------------+
