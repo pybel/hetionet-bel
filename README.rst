@@ -4,8 +4,7 @@ This repository contains exports of `Hetionet <https://github.com/hetio/hetionet
 as `Biological Expression Language (BEL) <http://bel.bio>`_. The research article describing
 Project Rephetio and Hetionet v1.0 is:
 
-  **`Systematic integration of biomedical knowledge prioritizes drugs for repurposing
-  <https://doi.org/10.7554/eLife.26726>`_**
+  `**Systematic integration of biomedical knowledge prioritizes drugs for repurposing** <https://doi.org/10.7554/eLife.26726>`_
   Daniel S Himmelstein, Antoine Lizee, Christine Hessler, Leo Brueggeman, Sabrina L Chen, Dexter Hadley, Ari Green, Pouya Khankhanian, Sergio E Baranzini
   *eLife* (2017-09-22) DOI: `10.7554/eLife.26726`
 
