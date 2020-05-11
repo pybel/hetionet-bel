@@ -129,7 +129,7 @@ BEL Script is the *de facto* standard for BEL, which all BEL-aware applications 
 It contains informations about the nodes, edges, and their biological context in a domain-specific language.
 It can be parsed with PyBEL or other BEL parsers.
 
-Example opening BEL Script using `pybel.from_bel_script() <https://pybel.readthedocs.io/en/latest/reference/io.html#pybel.from_bel_script>`_:
+Example opening BEL Script using `pybel.from_bel_script_gz() <https://pybel.readthedocs.io/en/latest/reference/io.html#pybel.from_bel_script_gz>`_:
 
 .. code-block:: python
 
