@@ -133,10 +133,8 @@ Example opening BEL Script using `pybel.from_bel_script() <https://pybel.readthe
 
 .. code-block:: python
 
-    import gzip
-    from pybel import from_bel_script
-    with gzip.open('hetionet-v1.0.bel.gz') as file:
-        graph = from_bel_script(file)
+    from pybel import from_bel_script_gz
+    graph = from_bel_script_gz('hetionet-v1.0.bel.gz')
 
 Nodelink JSON
 ~~~~~~~~~~~~~
